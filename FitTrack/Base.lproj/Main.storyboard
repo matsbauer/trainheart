@@ -485,6 +485,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuk-LB-llE">
+                                        <rect key="frame" x="210" y="373" width="122" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12230" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtw-RE-gww">
                                         <rect key="frame" x="186" y="345" width="122" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -625,11 +632,11 @@
                                             <segue destination="eIi-md-T58" kind="show" id="VWb-JJ-kTo"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuk-LB-llE">
-                                        <rect key="frame" x="210" y="373" width="122" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Synchronisation läuft..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wi-oe-aC1">
+                                        <rect key="frame" x="123" y="577" width="131" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -651,6 +658,7 @@
                         <outlet property="labelLastTrainingChange" destination="9Wi-RO-Mgf" id="Dfp-Ym-PwH"/>
                         <outlet property="labelLasttraining" destination="JCg-F9-Uhu" id="f9O-q2-fRE"/>
                         <outlet property="labelNexttraining" destination="ddb-bm-fN5" id="eDX-L2-yno"/>
+                        <outlet property="labelSync" destination="2wi-oe-aC1" id="YgB-Iw-ewe"/>
                         <outlet property="labelUserid" destination="CbX-rp-fHm" id="bJS-YZ-rfy"/>
                         <outlet property="labelninetydays" destination="4Nx-hE-M39" id="zMI-Wr-CAb"/>
                         <outlet property="labelthirtydays" destination="RTj-xg-Rhp" id="0JY-FC-nYJ"/>

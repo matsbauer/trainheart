@@ -21,6 +21,7 @@ class insideViewController: UIViewController {
     @IBOutlet weak var labelManual: UITextField!
     @IBOutlet weak var labelFP: UILabel!
     @IBOutlet weak var labelLastTrainingChange: UILabel!
+    @IBOutlet weak var labelSync: UILabel!
     
     @IBAction func insertManual(_ sender: UIButton) {
         let machinecode = labelManual.text
@@ -65,6 +66,7 @@ class insideViewController: UIViewController {
                     self.labelninetydays.text = jsonData.value(forKey: "90daychange") as! String?
                     self.labelAllchange.text = jsonData.value(forKey: "allchange") as! String?
                     self.labelLastTrainingChange.text = jsonData.value(forKey: "last") as! String?
+                    self.labelSync.isHidden = true
                 }
         }
         
