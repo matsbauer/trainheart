@@ -18,17 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="FlB-l1-mjZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Es lädt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYj-3g-3gd">
+                                <rect key="frame" x="161" y="323" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="FlB-l1-mjZ" firstAttribute="top" secondItem="SLv-HX-jVT" secondAttribute="top" id="Ctq-LS-4oU"/>
-                            <constraint firstItem="FlB-l1-mjZ" firstAttribute="leading" secondItem="gi0-Ae-o9T" secondAttribute="leading" id="QqY-Z9-8z3"/>
-                            <constraint firstItem="FlB-l1-mjZ" firstAttribute="trailing" secondItem="gi0-Ae-o9T" secondAttribute="trailing" id="lBN-rN-OhS"/>
-                            <constraint firstItem="FlB-l1-mjZ" firstAttribute="bottom" secondItem="gi0-Ae-o9T" secondAttribute="bottom" id="xw5-Rl-0w0"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gi0-Ae-o9T"/>
                     </view>
                 </viewController>
@@ -37,7 +35,4 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Background" width="876" height="1558"/>
-    </resources>
 </document>
