@@ -31,7 +31,7 @@ class insideViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.labelUserid.text = "Userid: " + String(userid) + ""
+        self.labelUserid.text = "ID: " + String(userid) + ""
         
         // GET LAST TRAINING DATE
         let loginurl = "https://makethemostof500.com/FitTrack/checklasttraining.php?userid=" + String(userid) + ""
