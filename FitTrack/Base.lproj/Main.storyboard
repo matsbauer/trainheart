@@ -721,7 +721,6 @@
         <!--View Controller-->
         <scene sceneID="d6s-SK-Gun">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfx-Gb-VzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="iXT-WT-CF9" customClass="QRViewController" customModule="FitTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oeo-Lt-N7e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -730,6 +729,7 @@
                         <viewLayoutGuide key="safeArea" id="WGp-Z8-qAG"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfx-Gb-VzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="720.79999999999995" y="-967.4662668665668"/>
         </scene>

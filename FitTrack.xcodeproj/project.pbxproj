@@ -61,6 +61,7 @@
 		6DC1C1D7208D12BB000A72AF /* MachineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineViewController.swift; sourceTree = "<group>"; };
 		6DC1C1DF208DCFF0000A72AF /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		6DC1C1E3208DF976000A72AF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6DE55D77208F48CA004FDFEA /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Alamofire; path = Pods/Alamofire; sourceTree = "<group>"; };
 		7364BC9BD7673FBCC1CF972F /* Pods_FitTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB6ED89516CEC9219256BE7 /* Pods-FitTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitTrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitTrack/Pods-FitTrack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +179,7 @@
 		EFF4CC9929B18B43C0AE43C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DE55D77208F48CA004FDFEA /* Alamofire */,
 				7364BC9BD7673FBCC1CF972F /* Pods_FitTrack.framework */,
 			);
 			name = Frameworks;
