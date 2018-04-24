@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -372,7 +373,7 @@
         <!--Inside View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="overview" id="BYZ-38-t0r" customClass="insideViewController" customModule="FitTrack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="insideViewController" id="BYZ-38-t0r" customClass="insideViewController" customModule="FitTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BQk-4y-SRo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -574,7 +575,10 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="9lK-RM-Sqo" kind="show" animates="NO" id="uFm-yl-rHl"/>
+                                            <segue destination="9lK-RM-Sqo" kind="show" animates="NO" id="uFm-yl-rHl">
+                                                <segue key="commit" inheritsFrom="parent" id="cRU-AR-lcn"/>
+                                                <segue key="preview" inheritsFrom="commit" id="hxP-Co-KPN"/>
+                                            </segue>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFk-dj-zqJ">
@@ -590,7 +594,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="eIi-md-T58" kind="show" animates="NO" id="VWb-JJ-kTo"/>
+                                            <segue destination="eIi-md-T58" kind="show" id="VWb-JJ-kTo"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -722,7 +726,7 @@
         <!--View Controller-->
         <scene sceneID="d6s-SK-Gun">
             <objects>
-                <viewController id="iXT-WT-CF9" customClass="QRViewController" customModule="FitTrack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QRViewController" id="iXT-WT-CF9" customClass="QRViewController" customModule="FitTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oeo-Lt-N7e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1518,7 +1522,7 @@
         <segue reference="u4T-zy-uTk"/>
         <segue reference="uFm-yl-rHl"/>
         <segue reference="9kJ-si-sfW"/>
-        <segue reference="JZY-fa-ex9"/>
+        <segue reference="u3P-p1-RIL"/>
         <segue reference="X2S-cu-nit"/>
     </inferredMetricsTieBreakers>
 </document>

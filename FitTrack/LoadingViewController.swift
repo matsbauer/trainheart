@@ -20,8 +20,13 @@ class LoadingViewController: UIViewController {
         let userid = defaults.integer(forKey: "userid")
         print(userid)
         if(userid > 0){
+            //following loader doesn't work yet!
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "insideViewController") as! insideViewController
+            self.present(newViewController, animated: false, completion: nil)
+
             //load segue continue
-            //performSegue(withIdentifier: "continueHome", sender: nil)
             
         }
         else{

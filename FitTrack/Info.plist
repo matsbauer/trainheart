@@ -43,6 +43,19 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>SCAN</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Gerätescanner</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Scanne nächstes Gerät</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>camshort</string>
+		</dict>
+	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 </dict>
