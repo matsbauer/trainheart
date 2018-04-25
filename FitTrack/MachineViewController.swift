@@ -18,6 +18,16 @@ class MachineViewController: UIViewController {
     @IBOutlet weak var labelCurrentreps: UILabel!
     @IBOutlet weak var labelCurrentweight: UILabel!
     @IBOutlet weak var labelCode: UILabel!
+    @IBOutlet weak var labelRegion: UILabel!
+    
+    @IBAction func button25kg(_ sender: UIButton) {
+        self.labelCurrentweight.text = "25"
+    }
+
+    @IBAction func button100kg(_ sender: UIButton) {
+        self.labelCurrentweight.text = "100"
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +47,8 @@ class MachineViewController: UIViewController {
                     let jsonData = result as! NSDictionary
                     
                     self.labelMachine.text = jsonData.value(forKey: "result") as! String?
+                    
+                    self.labelRegion.text = jsonData.value(forKey: "region") as! String?
                 }
         }
         
@@ -85,10 +97,22 @@ class MachineViewController: UIViewController {
     
     @IBAction func buttonInc(_ sender: UIButton) {
         self.labelCurrentreps.text = String(Int(labelCurrentreps.text!)! + 1)
+        if Int(self.labelCurrentreps.text!)! > 15 || Int(self.labelCurrentreps.text!)! < 8{
+            self.labelCurrentreps.textColor = UIColor.red
+        }
+        else{
+            self.labelCurrentreps.textColor = UIColor.black
+        }
     }
     
     @IBAction func buttonDec(_ sender: UIButton) {
         self.labelCurrentreps.text = String(Int(labelCurrentreps.text!)! - 1)
+        if Int(self.labelCurrentreps.text!)! < 8 || Int(self.labelCurrentreps.text!)! > 15 {
+            self.labelCurrentreps.textColor = UIColor.red
+        }
+        else{
+            self.labelCurrentreps.textColor = UIColor.black
+        }
     }
     
     @IBAction func buttonWeightInc(_ sender: UIButton) {
