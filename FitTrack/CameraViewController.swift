@@ -41,6 +41,7 @@ class CameraViewController: UIViewController {
                         self.labelMachinesNr.text = "Do It"
                         self.buttonEndex.isHidden = true
                         self.buttonNextec.isHidden = true
+                        self.buttonStartex.isHidden = false
                     }
                     else{
                         self.buttonEndex.isHidden = false
