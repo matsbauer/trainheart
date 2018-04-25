@@ -46,9 +46,9 @@ class MachineViewController: UIViewController {
                 if let result = response.result.value {
                     let jsonData = result as! NSDictionary
                     
-                    self.labelMachine.text = jsonData.value(forKey: "result") as! String?
+                    self.labelMachine.text = (jsonData.value(forKey: "result") as! String?)?.replacingOccurrences(of: "ue", with: "ü")
                     
-                    self.labelRegion.text = jsonData.value(forKey: "region") as! String?
+                    self.labelRegion.text = (jsonData.value(forKey: "region") as! String?)?.replacingOccurrences(of: "ue", with: "ü")
                 }
         }
         
